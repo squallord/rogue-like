@@ -1,0 +1,46 @@
+rouglike dungeon crawler em turnos
+jogo de exploração (single player a princípio - multiplayer via bluetooth? -> aumenta a complexidade)
+[RNG] itens consumíveis (alguns precisam identificar -> Vagante?) com efeitos positivos e negativos
+[RNG] itens equipáveis (armaduras, mochilas) -> tradeoff de equip load
+sinergia entre itens, cenários, jogadores e monstros
+progessao de personagem modular (vagante?)
+permadeath, mas o jogo continua...
+jogador controla uma guilda de aventureiros
+jogador controla cada aventureiro e apenas um aventureiro por vez
+[RNG] aventureiros nao tem classe especializada, mas começam com perks sorteados (vantagens e desvantagens -> Rougue Knight?)
+[RNG] são sorteados "aleatoriamente" 3 aventureirospor vez
+[RNG] o jogador começa escolhendo apenas um aventureiro de 3 para sua guilda
+se o jogador sobreviver a uma dungeon, ganhará o direito de escolher mais outro aventureiro
+[RNG] as dungeons escalam com o nível do aventureiro
+[RNG] existem chefoes
+[RNG] existem monstros
+foco em animacao simples e fluida
+movimentacao como em um tabuleiro modular
+jogo em turnos
+[RNG] armas de fogo com efeitos e alcances distintos
+[RNG] armas brancas com efeitos e alcances distintos
+[RNG] magia
+sinergia entre ações e cenário
+[RNG] exploração da dungeon se dá verticalmente para baixo (o tesouro fica nas profundezas!)
+encostar na parede permite olhar (peek) corredor (mais seguro do que sair entrando em um novo corredor)
+[RNG] armadilhas (cortante, explosivos, veneno, fogo)
+[RNG] cada dungeon tem um lore autogerado (história) diferente
+[RNG] corredores iluminados e nao iluminados
+sistema de stamina
+magias gastam stamina
+[RNG] um aventureiro com menos de "x%" de stamina fica em estado de fadiga ("x" varia de acordo com atributos fisicos do aventureiro)
+se corredor iluminado, revela ate o fim
+o jogador pode abandonar o personagem se sentir que não conseguirá mais prosseguir na dungeon, escolhendo assim outro personagem pra continuá-la
+o jogador poderá resgatar o personagem "abandonado" com o outro personagem que acabou de escolher ou que possui em sua "reserva"
+quando um jogador termina uma dungeon, seu personagem vai para sua reserva com todos os itens e tesouros que encontrou
+[RNG] quests autogeradas para cada dungeon
+[RNG] jogador escolhe uma entre 3 dungeons (fácil, média e difícil com tradeoff de melhores itens e recompensas para a guilda?)
+[RNG] inimigos surgem novamente após descerem x andares (x varia com a dificuldade da dungeon)
+resgates se tornarão quests automaticamente e para resgatar um aventureiro é necessário carregálo nas costas
+[RNG] carregar um aventureiro nas costas traz penalidade na iniciativa, movimento e stamina (penalidades variam com os atributos físicos de ambos)
+um aventureiro resgatado pode ser deixado no chão normalmente
+[RNG] os monstros podem atacar normalmente um aventureiro caído no chão
+[RNG] se o aventureiro estiver em outro andar, a cada x passos existe y% de chance de algum monstro que existe no andar atacar o aventureiro
+existem itens magicos que permitem saber a vida de um aventureiro caído e que faz parte da guilda (tornar isso também um item consumível?)
+[RNG] quests completadas garantem mais reconhecimento e geram aventureiros mais fortes nas próximas gerção
+o termo geração é dado ao ato de se finalizar uma quest, da morte ou do "abandono" de um aventureiro

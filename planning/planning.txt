@@ -1,0 +1,98 @@
+rouglike dungeon crawler em turnos
+
+Tempo/Esforço de implementação (fibonacci):
+01, 03, 05, 08, 13, 21
+
+== Sprints do Jogo Básico ==
+Sprint 1:
+[  ] animações básicas de personagem (idle + movimentação)
+[  ] animações básicas de 1 monstro (idle + movimentação)
+[  ] tileset básico (1 dungeon completa - chão, paredes)
+[  ] sistema de scrolling da dungeon
+[  ] uma dungeon básica implementada (sem autogeração ainda)
+[  ] sprites para a movimentação
+[  ] implementação de inputs via mouse
+[  ] mecânica de movimento básico do jogador
+
+Sprint 2:
+[  ] definição de inicio, fim e próximo andar de uma dungeon
+[  ] primeira dungeon com profundidade 3 (início, meio e fim)
+[  ] implementação de inputs via touch
+[  ] configuração da tela para dispositivos móveis
+[  ] primeiro deploy pra android
+
+Sprint 3:
+[  ] sistema de atributos do personagem
+[  ] mecânica geral do funcionamento dos atibutos e influência de cada atributo na relaização de ações
+[  ] sprites de vida, stamina e magia
+[  ] sistema básico de vida, stamina e magia (uso de componentes de GUI)
+[  ] mecânica básica de morte do aventureiro
+
+Sprint 4:
+[  ] sistema de turnos
+[  ] sistema básico de ataque (1 arma branca e 1 de fogo)
+[  ] sistema de bloqueio
+[  ] mecânica de movimento básico do monstro 1 (aleatório bem básico)
+
+Sprint 5:
+[  ] IA (comportamento) básica do monstro 1
+[  ] sistema de observação de corredor de dungeon (peek system)
+[  ] animações para o peek system
+[  ] adição de explosivos
+[  ] impacto dos explosivos no cenário (cenário parcialmente detrutível?)
+
+Sprint 6:
+[  ] sprites (botões, setas, tiles, etc) e cenário da guilda
+[  ] sistema da guilda - recrutamento de novos aventureiros (1 dentre 3)
+[  ] sistema da guilda - escolha de dungeons (1 dentre 3) sem geração aleatória ainda
+[  ] sistema completo de morte de um aventureiro (morreu? recruta outro)
+[  ] sistema de loot + inventário
+
+Sprint 7:
+[  ] sistema de save (Dungeon + Personagem + Guilda)
+[  ] sistema monetário da guilda
+[  ] sistema de espólios da guilda (baú da guilda para guardar os itens que os jogadores desejarem)
+[  ] permitir mover item do aventureiro para os espólios da guilda e vice-versa
+
+Sprint 8:
+[  ] cosmetics - 3 tipos de cabelo
+[  ] 1 sets completo de armadura leve (4 peças - helmo, braçadeiras, peitoral e pernas)
+[  ] sistema de composição de sprites (pesonagem + cabelo + armadura são compostos via sprites distintos no jogo -> máxima reusabilidade)
+[  ] sprites do segundo monstro
+
+Sprint 9:
+[  ] implementação do sistema de equip load
+[  ] mais 2 sets completos de armadura: média e pesada
+[  ] sistema da guilda - estoque de aventureiros
+[  ] implementação de mecânica do monstro 2 (golpes + IA + atributos)
+
+Sprint 10:
+[  ] 3 sprites de monstros
+[  ] implementação da mecânica dos 3 monstros
+
+
+Sprint 11:
+[  ] sprites do primeiro chefão
+[  ] sistema de geração aleatória de dungeons - parte 1
+
+Sprint 12:
+[  ] sprites da tela inicial do jogo
+[  ] implementação de 3 arquivos de jogos diferentes
+[  ] menu principal (start game, continue, load, quit)
+
+
+atributos básicos:
+strength     ooooo
+dexterity    ooooo
+constitution ooooo
+intelligence ooooo
+
+atrubutos derivados:
+hp
+stamina
+initiative
+attack speed
+equip load
+stealth (quão sorrateiramente o personagem consegue se mover)
+walk speed
+run speed
