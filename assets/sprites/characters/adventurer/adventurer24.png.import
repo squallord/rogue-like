@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemy-slime.png-5e4b6c63d67965e82fd5aea4b2b1a51b.stex"
+path="res://.import/adventurer24.png-aaf86db5e1a1a88fa25fe4e92924d3e7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemy-slime.png"
-dest_files=[ "res://.import/enemy-slime.png-5e4b6c63d67965e82fd5aea4b2b1a51b.stex" ]
+source_file="res://assets/sprites/characters/adventurer/adventurer24.png"
+dest_files=[ "res://.import/adventurer24.png-aaf86db5e1a1a88fa25fe4e92924d3e7.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -30,5 +30,5 @@ process/HDR_as_SRGB=false
 process/invert_color=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

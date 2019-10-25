@@ -8,7 +8,7 @@ permadeath, mas o jogo continua...
 jogador controla uma guilda de aventureiros
 jogador controla cada aventureiro e apenas um aventureiro por vez
 [RNG] aventureiros nao tem classe especializada, mas começam com perks sorteados (vantagens e desvantagens -> Rougue Knight?)
-[RNG] são sorteados "aleatoriamente" 3 aventureirospor vez
+[RNG] são sorteados "aleatoriamente" 3 aventureiros por vez
 [RNG] o jogador começa escolhendo apenas um aventureiro de 3 para sua guilda
 se o jogador sobreviver a uma dungeon, ganhará o direito de escolher mais outro aventureiro
 [RNG] as dungeons escalam com o nível do aventureiro
@@ -36,7 +36,7 @@ quando um jogador termina uma dungeon, seu personagem vai para sua reserva com t
 [RNG] quests autogeradas para cada dungeon
 [RNG] jogador escolhe uma entre 3 dungeons (fácil, média e difícil com tradeoff de melhores itens e recompensas para a guilda?)
 [RNG] inimigos surgem novamente após descerem x andares (x varia com a dificuldade da dungeon)
-resgates se tornarão quests automaticamente e para resgatar um aventureiro é necessário carregálo nas costas
+resgates se tornarão quests automaticamente e para resgatar um aventureiro é necessário carregá-lo nas costas
 [RNG] carregar um aventureiro nas costas traz penalidade na iniciativa, movimento e stamina (penalidades variam com os atributos físicos de ambos)
 um aventureiro resgatado pode ser deixado no chão normalmente
 [RNG] os monstros podem atacar normalmente um aventureiro caído no chão

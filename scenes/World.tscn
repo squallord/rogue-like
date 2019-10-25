@@ -1,32 +1,168 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=56 format=2]
 
-[ext_resource path="res://assets/sprites/adventurer.png" type="Texture" id=1]
+[ext_resource path="res://scripts/player.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer23.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer24.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer25.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer26.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer13.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer14.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer15.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer16.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer17.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer18.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer7.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer8.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer9.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer10.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer11.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer12.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer19.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer20.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer21.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer22.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer27.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer28.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer29.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer30.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer1.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer2.png" type="Texture" id=27]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer3.png" type="Texture" id=28]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer4.png" type="Texture" id=29]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer5.png" type="Texture" id=30]
+[ext_resource path="res://assets/sprites/characters/adventurer/adventurer6.png" type="Texture" id=31]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime7.png" type="Texture" id=32]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime8.png" type="Texture" id=33]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime9.png" type="Texture" id=34]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime10.png" type="Texture" id=35]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime11.png" type="Texture" id=36]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime12.png" type="Texture" id=37]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime13.png" type="Texture" id=38]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime14.png" type="Texture" id=39]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime15.png" type="Texture" id=40]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime16.png" type="Texture" id=41]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime17.png" type="Texture" id=42]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime18.png" type="Texture" id=43]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime1.png" type="Texture" id=44]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime2.png" type="Texture" id=45]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime3.png" type="Texture" id=46]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime4.png" type="Texture" id=47]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime5.png" type="Texture" id=48]
+[ext_resource path="res://assets/sprites/characters/monster/enemy-slime6.png" type="Texture" id=49]
+[ext_resource path="res://DungeonTilesetInner.tres" type="TileSet" id=50]
+[ext_resource path="res://DungeonTilesetOuter.tres" type="TileSet" id=51]
 
-[sub_resource type="Animation" id=1]
-resource_name = "idle_front"
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ 0, 3 ]
-}
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 9, 10 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Run Back",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "Idle Right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "Idle Back",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "Run Front",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "Run Right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "Idle Front",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "Slime Bounce",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "Slime Idle",
+"speed": 8.0
+} ]
 
 [node name="World" type="Node"]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+[node name="Player" type="Area2D" parent="."]
+position = Vector2( 48, 88 )
+z_index = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+visible = false
+position = Vector2( 0, -11 )
+z_index = 2
+shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
-texture = ExtResource( 1 )
-hframes = 30
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
+position = Vector2( 0, -12 )
+z_index = 1
+frames = SubResource( 2 )
+animation = "Idle Front"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="KinematicBody2D"]
-anims/idle_front = SubResource( 1 )
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+
+[node name="Slime" type="RigidBody2D" parent="."]
+position = Vector2( 80, 88 )
+z_index = 1
+gravity_scale = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slime"]
+visible = false
+z_index = 2
+shape = SubResource( 3 )
+disabled = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Slime"]
+position = Vector2( 0, -12 )
+z_index = 1
+frames = SubResource( 4 )
+animation = "Slime Bounce"
+
+[node name="TileMapInner" type="TileMap" parent="."]
+position = Vector2( 0, 8 )
+tile_set = ExtResource( 50 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -65536, 19, 0, -65535, 19, 0, -65534, 19, 0, -65533, 19, 0, -65532, 19, 0, -65531, 19, 0, -65530, 19, 0, -65529, 19, 0, -65528, 19, 0, -65527, 19, 0, -65526, 19, 0, -65525, 19, 0, -65524, 19, 0, -65523, 19, 0, -65522, 19, 0, 0, 19, 0, 1, 19, 0, 2, 19, 0, 3, 19, 0, 4, 19, 0, 5, 19, 0, 6, 19, 0, 7, 0, 0, 8, 1, 0, 9, 2, 0, 10, 3, 0, 11, 4, 0, 12, 2, 0, 13, 5, 0, 14, 19, 0, 65536, 19, 0, 65537, 0, 0, 65538, 1, 0, 65539, 2, 0, 65540, 3, 0, 65541, 4, 0, 65542, 5, 0, 65543, 12, 0, 65544, 12, 0, 65545, 12, 0, 65546, 12, 0, 65547, 12, 0, 65548, 12, 0, 65549, 12, 0, 65550, 19, 0, 131072, 19, 0, 131073, 12, 0, 131074, 12, 0, 131075, 12, 0, 131076, 12, 0, 131077, 12, 0, 131078, 12, 0, 131079, 12, 0, 131080, 12, 0, 131081, 12, 0, 131082, 12, 0, 131083, 12, 0, 131084, 12, 0, 131085, 12, 0, 131086, 19, 0, 196608, 19, 0, 196609, 12, 0, 196610, 12, 0, 196611, 12, 0, 196612, 12, 0, 196613, 12, 0, 196614, 12, 0, 196615, 12, 0, 196616, 12, 0, 196617, 12, 0, 196618, 12, 0, 196619, 12, 0, 196620, 12, 0, 196621, 12, 0, 196622, 19, 0, 262144, 19, 0, 262145, 19, 0, 262146, 19, 0, 262147, 19, 0, 262148, 19, 0, 262149, 19, 0, 262150, 19, 0, 262151, 12, 0, 262152, 12, 0, 262153, 12, 0, 262154, 12, 0, 262155, 12, 0, 262156, 12, 0, 262157, 12, 0, 262158, 19, 0, 327680, 19, 0, 327681, 19, 0, 327682, 19, 0, 327683, 19, 0, 327684, 19, 0, 327685, 19, 0, 327686, 19, 0, 327687, 12, 0, 327688, 12, 0, 327689, 12, 0, 327690, 12, 0, 327691, 12, 0, 327692, 12, 0, 327693, 12, 0, 327694, 19, 0, 393216, 19, 0, 393217, 19, 0, 393218, 19, 0, 393219, 19, 0, 393220, 19, 0, 393221, 19, 0, 393222, 19, 0, 393223, 12, 0, 393224, 12, 0, 393225, 12, 0, 393226, 12, 0, 393227, 12, 0, 393228, 12, 0, 393229, 12, 0, 393230, 19, 0, 458752, 19, 0, 458753, 19, 0, 458754, 19, 0, 458755, 19, 0, 458756, 19, 0, 458757, 19, 0, 458758, 19, 0, 458759, 19, 0, 458760, 19, 0, 458761, 19, 0, 458762, 19, 0, 458763, 19, 0, 458764, 19, 0, 458765, 19, 0, 458766, 19, 0 )
+
+[node name="TileMapOuter" type="TileMap" parent="."]
+position = Vector2( 0, 8 )
+tile_set = ExtResource( 51 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( -65509, 0, 0, -65508, 1, 0, -65507, 1, 0, -65506, 1, 0, -65505, 1, 0, -65504, 1, 0, -65503, 1, 0, -65502, 1, 0, -65501, 1, 0, -65500, 1, 0, -65499, 1, 0, -65498, 1, 0, -65497, 1, 0, -65496, 1, 0, -65495, 1, 0, -65494, 1, 0, -65493, 1, 0, -65492, 1, 0, -65491, 1, 0, -65490, 1, 0, -65489, 1, 0, -65488, 1, 0, -65487, 1, 0, -65486, 1, 0, -65485, 1, 0, -65484, 1, 0, -65483, 1, 0, -65482, 1, 0, -65481, 1, 0, -65480, 2, 0, 27, 5, 0, 56, 5, 0, 65563, 5, 0, 65592, 5, 0, 131099, 5, 0, 131128, 5, 0, 196611, 0, 0, 196612, 1, 0, 196613, 1, 0, 196614, 1, 0, 196615, 1, 0, 196616, 1, 0, 196617, 1, 0, 196618, 1, 0, 196619, 1, 0, 196620, 1, 0, 196621, 1, 0, 196622, 1, 0, 196623, 1, 0, 196624, 1, 0, 196625, 1, 0, 196626, 1, 0, 196627, 1, 0, 196628, 1, 0, 196629, 1, 0, 196630, 1, 0, 196631, 1, 0, 196632, 1, 0, 196633, 1, 0, 196634, 1, 0, 196635, 1, 0, 196664, 5, 0, 262147, 5, 0, 262200, 5, 0, 327683, 5, 0, 327736, 5, 0, 393219, 5, 0, 393272, 5, 0, 458755, 5, 0, 458808, 5, 0, 524291, 5, 0, 524344, 5, 0, 589827, 5, 0, 589880, 5, 0, 655363, 5, 0, 655416, 5, 0, 720899, 5, 0, 720952, 5, 0, 786435, 5, 0, 786488, 5, 0, 851971, 5, 0, 852024, 5, 0, 917507, 5, 0, 917560, 5, 0, 983043, 5, 0, 983096, 5, 0, 1048579, 6, 0, 1048580, 1, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048586, 1, 0, 1048587, 1, 0, 1048588, 1, 0, 1048589, 1, 0, 1048590, 1, 0, 1048591, 1, 0, 1048592, 1, 0, 1048593, 1, 0, 1048594, 1, 0, 1048595, 1, 0, 1048596, 1, 0, 1048597, 1, 0, 1048598, 1, 0, 1048599, 1, 0, 1048600, 1, 0, 1048601, 1, 0, 1048602, 1, 0, 1048603, 7, 0, 1048632, 5, 0, 1114139, 5, 0, 1114168, 5, 0, 1179675, 5, 0, 1179704, 5, 0, 1245211, 5, 0, 1245240, 5, 0, 1310747, 5, 0, 1310776, 5, 0, 1376283, 5, 0, 1376312, 5, 0, 1441819, 5, 0, 1441848, 5, 0, 1507355, 5, 0, 1507384, 5, 0, 1572891, 5, 0, 1572920, 5, 0, 1638427, 5, 0, 1638456, 5, 0, 1703963, 5, 0, 1703992, 5, 0, 1769499, 5, 0, 1769528, 5, 0, 1835035, 6, 0, 1835036, 1, 0, 1835037, 1, 0, 1835038, 1, 0, 1835039, 1, 0, 1835040, 1, 0, 1835041, 1, 0, 1835042, 1, 0, 1835043, 1, 0, 1835044, 1, 0, 1835045, 1, 0, 1835046, 1, 0, 1835047, 1, 0, 1835048, 1, 0, 1835049, 1, 0, 1835050, 1, 0, 1835051, 1, 0, 1835052, 1, 0, 1835053, 1, 0, 1835054, 1, 0, 1835055, 1, 0, 1835056, 1, 0, 1835057, 1, 0, 1835058, 1, 0, 1835059, 1, 0, 1835060, 1, 0, 1835061, 1, 0, 1835062, 1, 0, 1835063, 1, 0, 1835064, 8, 0 )
 
